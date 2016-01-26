@@ -4,7 +4,7 @@ There are some limitations to text analysis that become obvious before you even 
 
  By allowing the reader to shift their perspective, AntConc and topic modeling open the door to forming new insights into texts. They can be great tools when used in conjunction with more critical modes of analysis. Though it may be all too easy to use what Tressie McMillan Cottom calls, "quantitative textual analysis that is very popular with powerful actors precisely because it does not theorize power relations," these tools can greatly assist one's research methods so long as said researcher engages critically with them.
 
- I've decided to use DIGH5000's January 12th readings on text analysis as my corpus in order to venture a commentary on the ideas surrounding text analysis itself. 
+ I've decided to use DIGH5000's January 12th readings on text analysis as my corpus in order to venture a commentary on the texts addressing text analysis itself. 
 
 ##AntConc
 
@@ -22,7 +22,7 @@ It remains unclear exactly what kind of conclusions should be drawn from the fac
 
 ![web](https://github.com/SAllieW/screencaps/blob/master/web.png?raw=true)
 
-This tool does not address negative results except to note that it exists - it cannot address a word that has no outright instances in the text, even if the concerns of the text may be addressing the topic implicitly. For instance, the word "network" does not appear in "How Not to Read a Million Books" by Tanya Clement et al. but one of the primary concerns of the article -- tracing connections and patterns across a vast archive of books -- is clearly about addressing intertextual networks. 
+This tool does not address negative results except to note that they exist - it cannot address a word that has no outright instances in the text, even if the concerns of the text may be addressing the topic implicitly. For instance, the word "network" does not appear in "How Not to Read a Million Books" by Tanya Clement et al. but one of the primary concerns of the article -- tracing connections and patterns across a vast archive of books -- is clearly about addressing intertextual networks. 
 
 ![network](https://github.com/SAllieW/screencaps/blob/master/network.png?raw=true)
 
@@ -36,10 +36,16 @@ Unlike AntConc, where I believe a good deal of consideration must precede the us
 
 Interestingly, I ran into some problems running the six articles as separate documents. It created topics but the links within the topics to the texts were broken. This program forces you to treat a corpus as a single text - a handy metaphor for the way that distant reading seems to create such an intertextual approach to a vast body of written works as to fray the edges of the individual works.
 
-Look into topics that reflect individual articles
-Speculate on whether this speaks to an inner coherence of the texts
-And if so what does this tool add to them
+Another issue was with how the program handles certain forms of text. It's difficult to say whether the problems below affect the topics that get produced, but it does raise questions concerning what kinds of expressions the program is meant to handle.
+![error](https://github.com/SAllieW/screencaps/blob/master/error.png?raw=true)
 
+I ran the combined texts through various configurations of topic numbers, numbers of iterations, and topic proportion thresholds until the topics produced seemed to reflect the ideas in the text.
+![chosenTopics](https://github.com/SAllieW/screencaps/blob/master/ChosenTopics.png?raw=true)
+
+Topic 5, for example, seemed to closely reflect the ideas in "Quantitative Analysis of Culture Using Millions of Digitized Books" because 8/10 of the topic words are in the text. When I opened the topic and opened the docs, however, there were actually far fewer examples from the text than expected. Doc 154, for example, was taken from the text but only 3/20 of the docs were from the text.
+![OutWithTheOld](https://github.com/SAllieW/screencaps/blob/master/Out%20with%20the%20old.png?raw=true)
+
+These results suggest that this topic represents a significant area of overlap in the six articles. This is the strength of this program - not that we can reach conclusions based on the topics, but that they can serve to point us in a direction for other kinds of analysis.
 
 ##Conclusion
 
