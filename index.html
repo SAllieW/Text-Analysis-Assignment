@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=640">
+
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen">
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
+    <title>Text-analysis-assignment by SAllieW</title>
+  </head>
+
+  <body>
+    <a id="forkme_banner" href="https://github.com/SAllieW/Text-Analysis-Assignment">View on GitHub</a>
+    <div class="shell">
+
+      <header>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>Text-analysis-assignment</h1>
+            <h2>Analyzing the six texts assigned for DIGH5000&#39;s January class on text analysis using AntConc and Topic Modeling.</h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+      </header>
+
+      <section id="downloads">
+        <span class="inner">
+          <a href="https://github.com/SAllieW/Text-Analysis-Assignment/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/SAllieW/Text-Analysis-Assignment/tarball/master" class="tgz"><em>download</em> .TGZ</a>
+        </span>
+      </section>
+
+
+      <span class="banner-fix"></span>
+
+
+      <section id="main_content">
+        <hr>
+
+<p>title: AntConc Tool Tutorial
+authors:</p>
+
+<ul>
+<li>Allie Watson
+date: 2016-01-26
+reviewers:</li>
+<li>n/a
+layout: default
+---</li>
+</ul>
+
+<h1>
+<a id="introduction-to-antconc" class="anchor" href="#introduction-to-antconc" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Introduction to AntConc</h1>
+
+<p>This is a very approachable and intriguing program that allows you to examine a wide array of texts or, if you like, a single, large text, using what some have dubber "distant reading." There are some great sites that can get you started on the ins and outs of AntConc such as <a href="http://wmtang.org/2011/03/05/a-simple-guide-to-using-antconc/">this guide</a> that the AntConc site provides by Warren M Tang. An even better resource from the Programming Historian website is Heather Froehlich's <a href="http://programminghistorian.org/lessons/corpus-analysis-with-antconc">tutorial</a>.</p>
+
+<p>Honestly though, this program is quite user-friendly so the best approach I found was to fiddle around with the various tabs and settings and see what happens. It doesn't save over your original files, so feel free to click around without causig irreversible changes.</p>
+
+<h2>
+<a id="program-and-files" class="anchor" href="#program-and-files" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Program and Files</h2>
+
+<p>Download the program <a href="http://www.laurenceanthony.net/software.html">here</a> by clicking on the link that corresponds to your operating system and following the download instructions.</p>
+
+<h3>
+<a id="choose-your-texts" class="anchor" href="#choose-your-texts" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Choose your texts</h3>
+
+<p>AntConc only reads plain-text files. For help converting various files into .txt format, see <a href="https://github.com/digh5000/student-tutorials/blob/master/pandoc-tutorial-for-english-students-watson-herdman.md">this Pandoc tutorial</a>. Alternatively, just copy paste the text you want to analyze into a new document through a program like TextEdit and be sure to save it as a plain-text file.</p>
+
+<p>The texts I'm using for this tutorial are the six assigned articles for a class on text analysis. You can find the syllabus for DIGH5000 <a href="http://dhcu.ca/pages/syllabus">here</a> and the six texts under January 12th.</p>
+
+<p>To load the files you want to analyze, click the <strong>File</strong> menu and select <strong>Open File(s)...</strong>. Select the files in your computer and hit <strong>Open</strong>.</p>
+
+<h2>
+<a id="start-searching" class="anchor" href="#start-searching" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Start searching</h2>
+
+<p>To get a sense of how this program works, think of a word that likely appears in your chosen text(s). Type it into the <strong>Search Term</strong> bar toward the bottom of the window and click <strong>Start</strong>. In this example, I've decided to search for the word "text."
+<img src="https://github.com/SAllieW/screencaps/blob/master/text.png?raw=true" alt="text"></p>
+
+<h1>
+<a id="the-7-tabs" class="anchor" href="#the-7-tabs" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>The 7 tabs</h1>
+
+<p>AntConc gives you seven different ways to analyze your text(s).
+<strong>Concordance</strong> shows you the keyword you search for in context. This view is great for giving you a quick sense of how the word is being used within a sentence (or even within a word i.e. human in humanities). You can also hit the <strong>Sort</strong> button and it will alphabetize the findings according to the following word. Compare this image to the one above:
+<img src="https://github.com/SAllieW/screencaps/blob/master/sorted.png?raw=true" alt="sorted"></p>
+
+<p><strong>Concordance Plot</strong> shows you graphs/visualizations of the occurrences of your search term within the larger text(s). 
+<img src="https://github.com/SAllieW/screencaps/blob/master/word.png?raw=true" alt="word">
+Here, we can see that "word" occurs nine times throughout the Clement, Steger, Unsworth, and Uszkalo article, whereas it occurs only four times and in quick succession in the Jean-Baptiste article.</p>
+
+<p><strong>File View</strong> lets you see the actual text within the program.</p>
+
+<p><strong>Clusters/N-Grams</strong> shows words that are (surprise!) clustered together. Consider the clusters around the word "text" in these articles:
+<img src="https://github.com/SAllieW/screencaps/blob/master/TextCluster.png?raw=true" alt="textclusters">
+"text analysis" appears seventeen times in this corpus. The next most frequent pairing with the word "text" is "text-mining" with nine occurrences.</p>
+
+<p><strong>Collocates</strong> calculates the words that are likely to appear together. Unlike Clusters/N-Grams, this tab is not about what does appear, but words that are statistically likely to be found together. Like so:
+<img src="https://github.com/SAllieW/screencaps/blob/master/TextCollocates.png?raw=true" alt="textcollocates"></p>
+
+<p><strong>Word List</strong> looks at all the words in your corpus and shows you which ones occur the most. Here's what mine looks like:
+<img src="https://github.com/SAllieW/screencaps/blob/master/wordlist.png?raw=true" alt="wordlist"></p>
+
+<p>AntConc allows you to export your work as well. Under the <strong>File</strong> menu click <strong>Save Output to Text File...</strong> and choose a destination for plain-text version of your work. As you can see from the image below, the resulting document is a little unwieldy in terms of width, but at least you've got a copy of your endeavours.
+<img src="https://github.com/SAllieW/screencaps/blob/master/Output.png?raw=true" alt="output"></p>
+
+<h3>
+<a id="conc-lusion" class="anchor" href="#conc-lusion" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Conc-lusion</h3>
+
+<p>As an English major, this kind of digital humanities project holds tremendous appeal. Studies such as <a href="http://www.theguardian.com/books/2009/apr/03/agatha-christie-alzheimers-research">the one conducted on the works of Agatha Christie</a> show the potential for text analysis to aid us in interpreting large bodies of works in revelatory ways.</p>
+
+<p>What's more, future features of this tool are in the making. As Anthony's site lists, various new and helpful components like "drag and drop file handling" and being able to save your results will hopefully be added to the next version. You go, little AntConc.</p>
+
+<h2>
+<a id="references" class="anchor" href="#references" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>References</h2>
+
+<p>Anthony, L. (2014). AntConc (Version 3.4.3) [Computer Software]. Tokyo, Japan: Waseda University. Available from <a href="http://www.laurenceanthony.net/">http://www.laurenceanthony.net/</a></p>
+
+<p>Heather Froehlich , "Corpus Analysis with Antconc," Programming Historian (19 June 2015), <a href="http://programminghistorian.org/lessons/corpus-analysis-with-antconc.html">http://programminghistorian.org/lessons/corpus-analysis-with-antconc.html</a></p>
+      </section>
+
+      <footer>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <p>this project by <a href="https://github.com/SAllieW">SAllieW</a> can be found on <a href="https://github.com/SAllieW/Text-Analysis-Assignment">GitHub</a></p>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="https://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
